@@ -1,0 +1,52 @@
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input {
+    font-size: 24px;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-input:focus-visible {
+    outline: none;
+    box-shadow: inset 0px 0px 8px rgb(39, 39, 255);
+}
+
+.form-result {
+    position: relative;
+    margin-top: 5px;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+}
+
+.form-result::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+
+.form-result-text {
+    position: relative;
+    color: white;
+    z-index: 1;
+}
